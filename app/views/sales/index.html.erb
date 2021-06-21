@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <th><%= t('table_headers.purchaser_name')%></th>
+      <th><%= t('table_headers.description')%></th>
+      <th><%= t('table_headers.amount')%></th>
+      <th><%= t('table_headers.count')%></th>
+      <th><%= t('table_headers.address')%></th>
+      <th><%= t('table_headers.merchant')%></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <% @sales.each do |sale| %>
+        <tr>
+          <td><%= sale.purchaser_name %></td>
+          <td><%= sale.item_description %></td>
+          <td><%= number_to_currency(sale.item_amount, unit:'$ ', precision: 2, separator: ".", delimiter: ".") %></td>
+          <td><%= sale.purchase_count %></td>
+          <td><%= sale.merchant_address %></td>
+          <td><%= sale.merchant_name %></td>
+        </tr>
+      <% end %>
+  </tbody>
+</table>
+
+<div>
+  <%= render 'import' %>
+</div>

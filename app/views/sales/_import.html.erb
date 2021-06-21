@@ -1,0 +1,6 @@
+<%= form_tag import_sales_path, method: :post, local: true, multipart: true do %>
+      <div">
+        <%= file_field_tag :file, required: true, accept: 'text/plain' %>
+        <button><%= t('buttons.send') %></button>
+      </div>
+  <% end %>

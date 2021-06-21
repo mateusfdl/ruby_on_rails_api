@@ -1,0 +1,10 @@
+one:
+  id: 1
+  item_amount: 100
+  item_description: loren ipsun
+  purchase_count: 100
+  purchaser_name: Matheus
+  merchant_name: Clooud
+  merchant_address: Clooud district
+
+
