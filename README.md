@@ -16,7 +16,7 @@
 
 8 - To run suit test `docker-compose exec server rspec spec/`
 
-9 - To import data [localhost:3000/import_sales](http://localhost:3000/import_sales)
+9 - To import data [localhost:3000/](http://localhost:3000/)
 
 10 - have fun 😄!
 
